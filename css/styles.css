@@ -100,6 +100,9 @@
   width: 18px;
   height: 18px;
 }
-.form-input:focus ~ .icon {
-  fill: #2196f3;
+/* .form-input:focus ~ .icon {
+  color: #2196f3;
+} */
+.form-input:focus-within > .icon {
+  color: #2196f3;
 }
