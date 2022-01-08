@@ -26,40 +26,63 @@
       <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
 
       <div class="form-field">
-        <label for="name">Имя</label>
+        <label for="name" class="form-label">Имя</label>
         <input
           type="text"
+          class="form-input"
           name="name"
           id="name"
-          placeholder="Иван Иваныч"
-          autofocus
+          placeholder=" "
         />
+        <svg class="form-icon" width="18" height="18">
+          <use href="./images/modal-container/symbol-defs1.svg#icon-icon"></use>
+        </svg>
       </div>
 
       <div class="form-field">
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel" placeholder="33333" />
+        <label for="tel" class="form-label">Телефон</label>
+        <input
+          type="tel"
+          class="form-input"
+          name="tel"
+          id="tel"
+          placeholder=" "
+        />
+        <svg class="form-icon" width="18" height="18">
+          <use
+            href="./images/moal-container/symbol-defs1.svg#icon-phonetube"
+          ></use>
+        </svg>
       </div>
 
       <div class="form-field">
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail" placeholder="my@mail.com" />
+        <label for="mail" class="form-label">Почта</label>
+        <input
+          type="email"
+          class="form-input"
+          name="mail"
+          id="mail"
+          placeholder=" "
+        />
+        <svg class="form-icon" width="16" height="12">
+          <use href="./images/modal-container/symbol-defs1.svg#icon-mail"></use>
+        </svg>
       </div>
 
       <div class="form-field">
-        <label for="comment">Оставьте коментарий</label>
+        <label for="message" class="form-label">Коментарий</label>
         <textarea
-          class="comment"
-          name="comment"
-          id="comment"
-          rows="8"
-          placeholder="Уточните детали доклада"
+          id="message"
+          name="text"
+          class="form-message"
+          placeholder="Введите текст"
         ></textarea>
       </div>
 
       <div class="form-field">
-        <input type="checkbox" name="policy" id="policy" />
         <label for="policy">Соглашаюсь на всё, за еду</label>
+
+        <input type="checkbox" name="policy" id="policy" />
       </div>
 
       <button type="submit">Оставить заявку</button>

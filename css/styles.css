@@ -12,6 +12,7 @@
   margin-bottom: 12px;
   color: #212121;
   /* color: var(--titles-text-color-first); */
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
@@ -19,23 +20,86 @@
   text-align: center;
 }
 .form-field {
-  margin-bottom: 12px;
-  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+  /* display: flex;
   flex-direction: column;
 
   font-weight: 400;
   font-size: 12px;
   line-height: 1.21;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01em; */
 }
-.form-field input {
+/* .form-field input {
   margin: 0;
   padding: 12px 15px;
   width: 448px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-}
-.form-field label {
+} */
+.form-label {
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
   margin-bottom: 4px;
+  cursor: pointer;
+  position: relative;
+}
+/* .form-field label {
+  margin-bottom: 4px;
+} */
+
+/* .form-input:hover + .form-label {
+  color: red;
+} */
+.form-input,
+.form-message {
+  width: 100%;
+  height: 40px;
+  padding: 10px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.form-input:focus {
+  outline: 1px solid #2196f3;
+}
+.form-message {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-family: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+}
+.form-message:focus {
+  outline: 1px solid #2196f3;
+  border: 1px solid #2196f3;
+}
+.form-message::placeholder {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+.form-input:focus ~ .icon {
+  fill: #2196f3;
 }
